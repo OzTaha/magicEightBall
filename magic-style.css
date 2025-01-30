@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #2c3e50;
+    color: white;
+    transition: background 1s ease-in-out;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ball, .answer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.ball {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    background: black;
+    transition: transform 0.5s ease-in-out;
+}
+
+.ball.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-5px); }
+}
+
+.ask-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer-container {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.answer {
+    font-size: 16px;
+    color: white;
+    width: 100%;
+}
+
+input, button {
+    width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+}
+
+input {
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
