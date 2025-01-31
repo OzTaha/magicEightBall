@@ -1,10 +1,10 @@
 # 📌 MAGİC 8 BALL
 
-## 📷 Ekran Görüntüsü
+## 📷 Screenshot
 
 ![Uygulama Önizleme](img/sihirli_8_Top.png)
 
-## 🚀 Kullanılan Teknolojiler
+## 🚀 Tech
 
 * Html
 * Css
